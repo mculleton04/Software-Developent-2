@@ -26,5 +26,11 @@ class WatchlistType  { //lab2 - declare a base/parent/super class
                                           //lab3 - part4: - this means that the class will now be abstract
                                           //lab3 - part4: - it will not be possible to create objects of this class
 };
+bool operator==(WatchlistType&, WatchlistType&);
+bool operator!=(WatchlistType&, WatchlistType&);
+bool operator<(WatchlistType&, WatchlistType&);
+bool operator>(WatchlistType&, WatchlistType&);
+bool operator<=(WatchlistType&, WatchlistType&);
+bool operator>=(WatchlistType&, WatchlistType&);
 
 #endif /* _WatchlistType_ */

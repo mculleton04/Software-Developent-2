@@ -1,7 +1,9 @@
 #include <iostream>
 #include "WatchlistType.h"
-#include "Movies.h"
-#include "TVshows.h"
+#include "Movie.h"
+#include "TVshow.h"
+#include "Director.h"
+#include "Watchlist.h"
 using namespace std; 
 
 int main() {
@@ -9,18 +11,18 @@ int main() {
 	pli.displayDetails();
 
 
-	Movies s1; //creates a Movies object, s1, using the default Movies constructor
-	s1.setName("Nothing compares 2u");
+	Movie s1; //creates a Movie object, s1, using the default Movie constructor
+	s1.setName("Pulp Fiction");
 	s1.setDuration(4);
-	s1.setArtistName("Sinead O'Connor");
+	s1.setDirectorName("Quintin Tarantino");
 
-	Movies s2("September Fields", 1, "Frazey Ford"); // creates a Movies object, s2 using the overloaded Movies constructor
+	Movie s2("Interstellar", 1, "Christopher Nolan"); // creates a Movie object, s2 using the overloaded Movie constructor
 
-	//display the Moviess' details using the overridden displayDetails function
+	//display the Movie' details using the overridden displayDetails function
 	//s1.displayDetails();
 	//s2.displayDetails();
 
-	TVshows pc1("The rest is politics", 4, 12);
+	TVshow pc1("Breaking Bad", 4, 12);
 	//pc1.displayDetails();
 
 	//part 3 & part 4 code

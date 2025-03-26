@@ -47,3 +47,32 @@ void WatchlistType::displayDetails()
 {
 	cout << "WatchlistType : " << getName() << " has a duration of " << getDuration() << " minutes" << endl;
 }
+
+bool operator==(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return pli1.getName() == pli2.getName() && pli1.getDuration() == pli2.getDuration();
+}
+
+bool operator!=(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return !(pli1 == pli2);
+}
+
+bool operator<(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return pli1.getDuration() < pli2.getDuration();
+}
+
+bool operator>(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return pli1.getDuration() > pli2.getDuration();
+}
+
+bool operator<=(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return pli1.getDuration() <= pli2.getDuration();
+}
+bool operator>=(WatchlistType& pli1, WatchlistType& pli2)
+{
+	return pli1.getDuration() >= pli2.getDuration();
+}
