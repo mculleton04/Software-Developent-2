@@ -5,7 +5,7 @@
 #include "Director.h"
 #include "Watchlist.h"
 using namespace std; 
-//test
+//tes
 int main() {
 	WatchlistType pli; //comment this out for part 4 as is is not possible to instantiate an abstract class (i.e. a class containing a pure virtual function)
 	pli.displayDetails();
